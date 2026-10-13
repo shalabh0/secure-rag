@@ -9,12 +9,12 @@ class Document(Base):
 
     __tablename__ = "documents"
 
-    id: Mapped[int] = mapped_column(primary_key = True, index = True)
+    id: Mapped[int] = mapped_column(primary_key = True)
 
 
     filename: Mapped[str] = mapped_column(String(255), nullable = False)
 
-    status: Mapped [str] = mapped_column(String(255), nullable = False, default = "pending")
+    status: Mapped [str] = mapped_column(String(20), nullable = False, default = "pending")
 
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),

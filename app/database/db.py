@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from app.config import settings
 
 DATABASE_URL = (
-    f"postgresql://"
+    f"postgresql+psycopg2://"
     f"{settings.POSTGRES_USER}:"
     f"{settings.POSTGRES_PASSWORD}@"
     f"{settings.POSTGRES_HOST}:"

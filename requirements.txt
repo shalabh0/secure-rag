@@ -20,3 +20,5 @@ python-dotenv
 
 pytest
 httpx
+
+alembic==1.20.0
